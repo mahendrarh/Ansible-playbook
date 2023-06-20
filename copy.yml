@@ -1,0 +1,15 @@
+---
+
+- hosts: win
+
+  tasks:
+
+  - name: Copy File
+
+    win_copy:
+
+      src: C:\POC_Acceptance_VBR.docx
+
+      dest: C:\Users\admin\
+     
+      remote_src: yes

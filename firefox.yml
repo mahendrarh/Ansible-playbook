@@ -1,0 +1,8 @@
+---
+- hosts: win
+  gather_facts: no
+  tasks: 
+  - name: Manage firefox
+    win_chocolatey: 
+      name: firefox
+      state: absent

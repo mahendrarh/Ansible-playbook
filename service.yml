@@ -1,0 +1,12 @@
+---
+- hosts: laptop 
+
+  tasks: 
+
+   - name: Stop service iphelp
+
+     win_service:
+
+       name: Phonesvc
+
+       state: stopped

@@ -1,0 +1,9 @@
+---
+- hosts: win
+  gather_facts: no
+  tasks:
+  - name: manage notepadplusplus
+    win_chocolatey:
+      name: notepadplusplus
+      state: present
+    
